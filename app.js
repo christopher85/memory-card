@@ -151,8 +151,18 @@ addCardBtn.addEventListener('click', () => {
 
 // clear cards button
 
-clearBtn.addEventListener('click', () =>{
-    localStorage.clear();
-    cardsContainer.innerHTML = '';
-    window.location.reload();
-})
+clearBtn.addEventListener('click', () => {
+    
+    let el = document.querySelector('.active');
+    el.remove();
+    
+    // localStorage.removeItem();
+    // cardsContainer.innerHTML = '';
+    // window.location.reload();
+    console.log();
+    
+});
+
+
+
+
